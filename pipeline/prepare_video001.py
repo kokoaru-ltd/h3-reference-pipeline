@@ -17,6 +17,10 @@ def main():
     # mistaken for a production identity cache.
     identity=(out/'identity_master.png') if a.dry_run else (ROOT/'personas'/a.persona/'identity_master.png')
     if not identity.exists():
+        existing_qc=check(target) if target.exists() else {'status':'FAIL'}
+        if existing_qc.get('status')=='PASS':
+            shots.append({'shot_id':s['id'],'duration':s['duration'],'dialogue_vi':s['dialogue_vi'],'image':str(target),'identity_reference':str(identity),'qc':existing_qc,'reused':True})
+            continue
         if a.dry_run:
             from PIL import Image,ImageDraw
             identity.parent.mkdir(parents=True,exist_ok=True)
