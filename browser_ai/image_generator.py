@@ -5,7 +5,9 @@ from .client import GatewayClient
 
 def save_gateway_image(response: dict, out: str | Path) -> Path:
     out=Path(out); out.parent.mkdir(parents=True,exist_ok=True)
-    item=(response.get('data') or [{}])[0]
+    # Gateways may echo uploaded reference thumbnails before the newly
+    # generated image. The final item is the generation result.
+    item=(response.get('data') or [{}])[-1]
     if item.get('b64_json'): out.write_bytes(base64.b64decode(item['b64_json']))
     elif item.get('url'):
         import urllib.request; urllib.request.urlretrieve(item['url'],str(out))
