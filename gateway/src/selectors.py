@@ -15,6 +15,10 @@ class Selectors:
     # ── Chat input ──────────────────────────────────────────────
     CHAT_INPUT = [
         "#prompt-textarea",
+        "textarea[data-testid='prompt-textarea']",
+        "textarea[placeholder*='Ask']",
+        "textarea[placeholder*='Message']",
+        "[contenteditable='true'][data-placeholder*='Ask']",
         "div[contenteditable='true'][id='prompt-textarea']",
         "div[contenteditable='true']",
     ]
