@@ -12,6 +12,9 @@ class GatewayClient:
         req=urllib.request.Request(self.base_url+path,data=json.dumps(body).encode(),headers=headers,method='POST')
         try:
             with urllib.request.urlopen(req,timeout=600) as r: return json.load(r)
+        except urllib.error.HTTPError as e:
+            detail=e.read().decode('utf-8','replace')[:500]
+            raise RuntimeError(f'GATEWAY_HTTP_{e.code}:{detail}') from e
         except urllib.error.URLError as e:
             raise RuntimeError(f'GATEWAY_UNAVAILABLE:{self.base_url} ({e.reason})') from e
     def chat(self, messages, model=None):
