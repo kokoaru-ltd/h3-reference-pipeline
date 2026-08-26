@@ -3,9 +3,13 @@ import base64, json, os, urllib.request, urllib.error
 from pathlib import Path
 
 class GatewayClient:
-    def __init__(self, base_url=None): self.base_url=(base_url or os.getenv('CHATGPT_GATEWAY_URL','http://127.0.0.1:8000')).rstrip('/')
+    def __init__(self, base_url=None, api_token=None):
+        self.base_url=(base_url or os.getenv('CHATGPT_GATEWAY_URL','http://127.0.0.1:8000')).rstrip('/')
+        self.api_token=api_token or os.getenv('CHATGPT_GATEWAY_API_TOKEN','')
     def _post(self,path,body):
-        req=urllib.request.Request(self.base_url+path,data=json.dumps(body).encode(),headers={'Content-Type':'application/json'},method='POST')
+        headers={'Content-Type':'application/json'}
+        if self.api_token: headers['Authorization']=f'Bearer {self.api_token}'
+        req=urllib.request.Request(self.base_url+path,data=json.dumps(body).encode(),headers=headers,method='POST')
         try:
             with urllib.request.urlopen(req,timeout=600) as r: return json.load(r)
         except urllib.error.URLError as e:

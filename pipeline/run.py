@@ -1,9 +1,9 @@
 from __future__ import annotations
 import argparse, json
 from pathlib import Path
-from research_success_ads.engine.campaign_runner import run as run_campaign
-from research_success_ads.image.reference_builder import ReferenceBuilder
-from research_success_ads.image.comfyui_provider import ComfyUIProvider
+from engine.campaign_runner import run as run_campaign
+from image.reference_builder import ReferenceBuilder
+from image.comfyui_provider import ComfyUIProvider
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -19,7 +19,7 @@ def main():
     out=Path(a.out) if a.out else ROOT/'outputs'/f'{a.persona}_idea'
     ref_provider=ComfyUIProvider() if a.reference_mode=='comfyui' else None
     # Build references from the first deterministic plan without invoking an LLM.
-    from research_success_ads.engine.creative_planner import CreativePlanner
+    from engine.creative_planner import CreativePlanner
     reference_plan=CreativePlanner().next_plan(offer,[],0)
     ReferenceBuilder(ROOT,ref_provider).build(reference_plan,a.persona,out/'references',dry_run=(a.reference_mode=='dry-run'))
     summary=run_campaign(offer,a.count,out,a.mode)

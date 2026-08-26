@@ -4,8 +4,8 @@ This lane stops after Image-2 start-frame generation. It does not call Seedance,
 ElevenLabs, ComfyUI, or any paid API.
 
 ```powershell
-python -m research_success_ads.browser_ai.gateway_status
-python -m research_success_ads.pipeline.prepare_video001 --out research_success_ads/outputs/linh_video001
+python -m browser_ai.gateway_status
+python -m pipeline.prepare_video001 --out outputs/linh_video001
 ```
 
 `CHATGPT_GATEWAY_URL` points at the locally running browser gateway. Put the

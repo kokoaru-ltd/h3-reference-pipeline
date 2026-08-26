@@ -1,12 +1,14 @@
 from __future__ import annotations
 import argparse, json, os, urllib.request, urllib.error
-from research_success_ads.engine.env import load_dotenv
+from engine.env import load_dotenv
 
 def probe(base: str) -> dict:
     base = base.rstrip('/')
-    for path in ('/health', '/v1/models'):
+    token=os.getenv('CHATGPT_GATEWAY_API_TOKEN','')
+    for path in ('/healthz', '/health', '/v1/models'):
         try:
-            with urllib.request.urlopen(base + path, timeout=5) as r:
+            req=urllib.request.Request(base + path, headers={'Authorization':f'Bearer {token}'} if token else {})
+            with urllib.request.urlopen(req, timeout=5) as r:
                 return {'status':'READY', 'url':base, 'probe':path, 'http_status':r.status}
         except urllib.error.HTTPError as e:
             # A live gateway may not expose /health; a 401/404 still proves a

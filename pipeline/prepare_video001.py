@@ -1,10 +1,10 @@
 from __future__ import annotations
 import argparse, json, sys
 from pathlib import Path
-from research_success_ads.browser_ai.client import GatewayClient
-from research_success_ads.browser_ai.image_generator import generate_shot_image
-from research_success_ads.browser_ai.prompt_templates import VIDEO001, SHOT_START, IDENTITY_MASTER_SHEET
-from research_success_ads.qc.image_qc import check
+from browser_ai.client import GatewayClient
+from browser_ai.image_generator import generate_shot_image
+from browser_ai.prompt_templates import VIDEO001, SHOT_START, IDENTITY_MASTER_SHEET
+from qc.image_qc import check
 
 ROOT=Path(__file__).resolve().parents[1]
 def main():
