@@ -1,0 +1,11 @@
+.env
+outputs/
+**/outputs/
+*.mp4
+*.mov
+*.avi
+*.png
+*.jpg
+*.jpeg
+**/__pycache__/
+.pytest_cache/

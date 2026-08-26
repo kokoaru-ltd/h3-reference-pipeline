@@ -1,0 +1,13 @@
+{
+  "recipe_id": "pattern_interrupt_003",
+  "offer_id": "kato_foreign_talent",
+  "locale": "ja-JP",
+  "aspect_ratio": "9:16",
+  "duration": 15,
+  "shots": [
+    {"id":"s1","start":0,"end":3,"shot":"wide","camera":"locked","actor_action":"HR manager waits surrounded by empty chairs","dialogue":null,"purpose":"pattern_interrupt"},
+    {"id":"s2","start":3,"end":7,"shot":"medium","camera":"slow_push_in","actor_action":"looks at empty chairs then checks phone","dialogue":"求人出して3か月。応募、まだゼロ。","purpose":"tension"},
+    {"id":"s3","start":7,"end":11,"shot":"medium_closeup","camera":"push_in","actor_action":"support staff places a clear job card beside the phone","dialogue":null,"purpose":"solution"},
+    {"id":"s4","start":11,"end":15,"shot":"medium_closeup","camera":"locked","actor_action":"HR manager turns to camera and points to the job card","dialogue":"採用を、もっと低リスクに。","purpose":"cta"}
+  ]
+}

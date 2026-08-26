@@ -1,0 +1,404 @@
+[
+  {
+    "id": "urban_decay_naked_15s",
+    "index": 1,
+    "video_url": "https://www.youtube.com/watch?v=XY69Oaq7goM",
+    "downloaded": true,
+    "frames": [
+      {
+        "time_sec": 0,
+        "path": "videos/01/keyframes/00s.jpg"
+      },
+      {
+        "time_sec": 2,
+        "path": "videos/01/keyframes/02s.jpg"
+      },
+      {
+        "time_sec": 5,
+        "path": "videos/01/keyframes/05s.jpg"
+      },
+      {
+        "time_sec": 8,
+        "path": "videos/01/keyframes/08s.jpg"
+      },
+      {
+        "time_sec": 10,
+        "path": "videos/01/keyframes/10s.jpg"
+      },
+      {
+        "time_sec": 12,
+        "path": "videos/01/keyframes/12s.jpg"
+      }
+    ],
+    "scene_cuts_sec": [
+      1.7,
+      9.1,
+      10.767,
+      13.033
+    ],
+    "error": null,
+    "duration_sec": 15.001,
+    "fps": 30.0,
+    "width": 144,
+    "height": 256
+  },
+  {
+    "id": "cider_shorts",
+    "index": 2,
+    "video_url": "https://www.youtube.com/watch?v=kOXr65vDDUo",
+    "downloaded": true,
+    "frames": [
+      {
+        "time_sec": 0,
+        "path": "videos/02/keyframes/00s.jpg"
+      },
+      {
+        "time_sec": 2,
+        "path": "videos/02/keyframes/02s.jpg"
+      },
+      {
+        "time_sec": 5,
+        "path": "videos/02/keyframes/05s.jpg"
+      },
+      {
+        "time_sec": 8,
+        "path": "videos/02/keyframes/08s.jpg"
+      },
+      {
+        "time_sec": 10,
+        "path": "videos/02/keyframes/10s.jpg"
+      },
+      {
+        "time_sec": 12,
+        "path": "videos/02/keyframes/12s.jpg"
+      },
+      {
+        "time_sec": 15,
+        "path": "videos/02/keyframes/15s.jpg"
+      }
+    ],
+    "scene_cuts_sec": [
+      1.877,
+      3.253,
+      6.131,
+      6.882,
+      7.633,
+      8.55,
+      9.051,
+      9.426,
+      9.509,
+      9.968,
+      10.427,
+      11.136,
+      11.511,
+      13.305,
+      14.306,
+      16.225,
+      17.059,
+      18.143,
+      19.061,
+      21.48,
+      21.939,
+      22.314,
+      22.606,
+      22.648,
+      23.106,
+      23.19,
+      23.273,
+      23.732,
+      24.191,
+      24.733,
+      25.484,
+      26.61,
+      26.985,
+      27.402,
+      28.445,
+      28.529,
+      28.737,
+      30.03
+    ],
+    "error": null,
+    "duration_sec": 30.101,
+    "fps": 23.976023976023978,
+    "width": 640,
+    "height": 360
+  },
+  {
+    "id": "wolt_shorts",
+    "index": 3,
+    "video_url": "https://www.youtube.com/watch?v=UQzy27r-XKo",
+    "downloaded": true,
+    "frames": [
+      {
+        "time_sec": 0,
+        "path": "videos/03/keyframes/00s.jpg"
+      },
+      {
+        "time_sec": 2,
+        "path": "videos/03/keyframes/02s.jpg"
+      },
+      {
+        "time_sec": 5,
+        "path": "videos/03/keyframes/05s.jpg"
+      },
+      {
+        "time_sec": 8,
+        "path": "videos/03/keyframes/08s.jpg"
+      },
+      {
+        "time_sec": 10,
+        "path": "videos/03/keyframes/10s.jpg"
+      },
+      {
+        "time_sec": 12,
+        "path": "videos/03/keyframes/12s.jpg"
+      },
+      {
+        "time_sec": 15,
+        "path": "videos/03/keyframes/15s.jpg"
+      }
+    ],
+    "scene_cuts_sec": [
+      4.9,
+      6.2,
+      10.133,
+      10.6,
+      11.333,
+      13.2,
+      14.7,
+      15.6,
+      17.066,
+      18.333,
+      20.066
+    ],
+    "error": null,
+    "duration_sec": 23.781,
+    "fps": 30.0,
+    "width": 144,
+    "height": 256
+  },
+  {
+    "id": "google_pixel_magic",
+    "index": 4,
+    "video_url": "https://www.youtube.com/watch?v=sXrasaDZxw0",
+    "downloaded": false,
+    "frames": [],
+    "scene_cuts_sec": [],
+    "error": "video_not_downloaded_or_access_denied"
+  },
+  {
+    "id": "samsung_galaxy_short",
+    "index": 5,
+    "video_url": "https://www.youtube.com/watch?v=2ExVA1lZ--Y",
+    "downloaded": false,
+    "frames": [],
+    "scene_cuts_sec": [],
+    "error": "video_not_downloaded_or_access_denied"
+  },
+  {
+    "id": "cerave_creator_superbowl",
+    "index": 6,
+    "video_url": "https://www.youtube.com/watch?v=vAf5TjiUJgo",
+    "downloaded": true,
+    "frames": [
+      {
+        "time_sec": 0,
+        "path": "videos/06/keyframes/00s.jpg"
+      },
+      {
+        "time_sec": 2,
+        "path": "videos/06/keyframes/02s.jpg"
+      },
+      {
+        "time_sec": 5,
+        "path": "videos/06/keyframes/05s.jpg"
+      },
+      {
+        "time_sec": 8,
+        "path": "videos/06/keyframes/08s.jpg"
+      },
+      {
+        "time_sec": 10,
+        "path": "videos/06/keyframes/10s.jpg"
+      },
+      {
+        "time_sec": 12,
+        "path": "videos/06/keyframes/12s.jpg"
+      },
+      {
+        "time_sec": 15,
+        "path": "videos/06/keyframes/15s.jpg"
+      }
+    ],
+    "scene_cuts_sec": [
+      5.422,
+      13.43,
+      19.311,
+      23.774,
+      25.567,
+      27.236
+    ],
+    "error": null,
+    "duration_sec": 30.061,
+    "fps": 23.976023976023978,
+    "width": 640,
+    "height": 360
+  },
+  {
+    "id": "doritos_short",
+    "index": 7,
+    "video_url": "https://www.youtube.com/watch?v=-1XsGmnOkzg",
+    "downloaded": true,
+    "frames": [
+      {
+        "time_sec": 0,
+        "path": "videos/07/keyframes/00s.jpg"
+      },
+      {
+        "time_sec": 2,
+        "path": "videos/07/keyframes/02s.jpg"
+      },
+      {
+        "time_sec": 5,
+        "path": "videos/07/keyframes/05s.jpg"
+      },
+      {
+        "time_sec": 8,
+        "path": "videos/07/keyframes/08s.jpg"
+      },
+      {
+        "time_sec": 10,
+        "path": "videos/07/keyframes/10s.jpg"
+      },
+      {
+        "time_sec": 12,
+        "path": "videos/07/keyframes/12s.jpg"
+      },
+      {
+        "time_sec": 15,
+        "path": "videos/07/keyframes/15s.jpg"
+      }
+    ],
+    "scene_cuts_sec": [
+      2.9,
+      4.0,
+      7.9,
+      11.8,
+      14.367,
+      19.667,
+      24.467,
+      25.2
+    ],
+    "error": null,
+    "duration_sec": 25.981,
+    "fps": 30.0,
+    "width": 144,
+    "height": 256
+  },
+  {
+    "id": "clearscore_short",
+    "index": 8,
+    "video_url": "https://www.youtube.com/shorts/9GVeLEAb-ok",
+    "downloaded": true,
+    "frames": [
+      {
+        "time_sec": 0,
+        "path": "videos/08/keyframes/00s.jpg"
+      },
+      {
+        "time_sec": 2,
+        "path": "videos/08/keyframes/02s.jpg"
+      },
+      {
+        "time_sec": 5,
+        "path": "videos/08/keyframes/05s.jpg"
+      },
+      {
+        "time_sec": 8,
+        "path": "videos/08/keyframes/08s.jpg"
+      },
+      {
+        "time_sec": 10,
+        "path": "videos/08/keyframes/10s.jpg"
+      },
+      {
+        "time_sec": 12,
+        "path": "videos/08/keyframes/12s.jpg"
+      },
+      {
+        "time_sec": 15,
+        "path": "videos/08/keyframes/15s.jpg"
+      }
+    ],
+    "scene_cuts_sec": [
+      10.033,
+      14.0,
+      15.133,
+      18.8,
+      20.867,
+      26.234,
+      27.6,
+      34.533
+    ],
+    "error": null,
+    "duration_sec": 34.661,
+    "fps": 30.0,
+    "width": 144,
+    "height": 256
+  },
+  {
+    "id": "parachute_short",
+    "index": 9,
+    "video_url": "https://www.youtube.com/shorts/1nZg0iHtiYc",
+    "downloaded": true,
+    "frames": [
+      {
+        "time_sec": 0,
+        "path": "videos/09/keyframes/00s.jpg"
+      },
+      {
+        "time_sec": 2,
+        "path": "videos/09/keyframes/02s.jpg"
+      },
+      {
+        "time_sec": 5,
+        "path": "videos/09/keyframes/05s.jpg"
+      },
+      {
+        "time_sec": 8,
+        "path": "videos/09/keyframes/08s.jpg"
+      },
+      {
+        "time_sec": 10,
+        "path": "videos/09/keyframes/10s.jpg"
+      },
+      {
+        "time_sec": 12,
+        "path": "videos/09/keyframes/12s.jpg"
+      },
+      {
+        "time_sec": 15,
+        "path": "videos/09/keyframes/15s.jpg"
+      }
+    ],
+    "scene_cuts_sec": [
+      1.3,
+      2.5,
+      11.033
+    ],
+    "error": null,
+    "duration_sec": 16.301,
+    "fps": 30.0,
+    "width": 144,
+    "height": 256
+  },
+  {
+    "id": "mcdonalds_wcdonalds",
+    "index": 10,
+    "video_url": "https://www.youtube.com/watch?v=alp-u4EFLAc",
+    "downloaded": false,
+    "frames": [],
+    "scene_cuts_sec": [],
+    "error": "video_not_downloaded_or_access_denied"
+  }
+]

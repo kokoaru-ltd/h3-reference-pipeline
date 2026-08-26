@@ -1,0 +1,11 @@
+{
+  "offer_id": "kato_foreign_talent",
+  "product": "外国人材採用サポート",
+  "character_id": "jobhell_girl_01",
+  "default_dialogue": "仕事探しを、もっと低リスクに。",
+  "dialogue_segments": [
+    {"speaker":"job_seeker","language_code":"ja","text":"面接に落ち続けて、どうすればいいか分かりません。","start":0,"end":3},
+    {"speaker":"support_staff","language_code":"ja","text":"あなたに合う仕事を一緒に探します。","start":7,"end":11},
+    {"speaker":"job_seeker","language_code":"ja","text":"これなら日本で働けそうです。","start":11,"end":15}
+  ]
+}

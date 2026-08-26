@@ -1,0 +1,13 @@
+{
+  "id": "linh_01",
+  "fictional": true,
+  "display_name": "Linh",
+  "age": 24,
+  "nationality": "Vietnamese",
+  "current_country": "Japan",
+  "city": "Tokyo",
+  "languages": {"vi": "native", "en": "conversational", "ja": "basic"},
+  "content_theme": "Vietnamese woman job hunting in Japan",
+  "speech_style": "simple_non_native_japanese",
+  "voice_profile": "job_seeker"
+}

@@ -1,0 +1,11 @@
+{
+  "character": {
+    "front": null,
+    "three_quarter": null,
+    "full_body": null
+  },
+  "environment": [],
+  "motion": [],
+  "audio": [],
+  "note": "Values must be public HTTPS URLs or BytePlus asset:// IDs; local paths are not sent directly."
+}

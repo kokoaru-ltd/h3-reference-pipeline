@@ -1,0 +1,11 @@
+IDENTITY_MASTER = '''Create ONE single realistic photograph for a fictional Vietnamese social-media character named Linh. 24-year-old Vietnamese woman living in Japan, approachable creator appearance, shoulder-length dark hair, natural skin texture, ordinary smartphone selfie, vertical 9:16. Do not resemble any specific real person. No text, logos, subtitles, collage or multiple images. This is the identity master; keep face, hair and body proportions stable.'''
+
+IDENTITY_MASTER_SHEET = '''Create ONE identity reference photograph for the same fictional Vietnamese woman Linh (24, living in Japan). Show a clean vertical 9:16 full-body portrait, neutral expression, shoulder-length dark hair, consistent body proportions, plain light-gray background, simple neutral clothing. This image is an identity anchor only. No text, logo, collage, split screen, watermark, or readable marks. Do not resemble a real person.'''
+
+SHOT_START = '''Generate ONE single realistic vertical 9:16 smartphone photograph. Use Image 1 as IDENTITY REFERENCE ONLY: preserve only face, hairstyle, skin tone and body proportions. Do not inherit its composition, crop, clothing, background or lighting. SCENE: {location}. CAMERA: {camera}. ACTION AT THIS EXACT MOMENT: {action}. WARDROBE: {wardrobe}. PROP: {prop}. No readable text, subtitles, logos, UI, collage, labels or watermark. This is a start frame for a video.'''
+
+VIDEO001 = [
+    {'id':'s1','duration':5,'location':'small ordinary apartment in Japan','camera':'phone on desk, medium locked shot','action':'Linh stands close to the phone and gives one small friendly wave','dialogue_vi':'Xin chào, mình là Linh. Mình 24 tuổi.'},
+    {'id':'s2','duration':5,'location':'ordinary Japanese street','camera':'handheld selfie at arm length','action':'Linh walks slowly while holding the phone and shows the street behind her','dialogue_vi':'Mình đang sống ở Nhật. Mình rất thích cuộc sống ở đây.'},
+    {'id':'s3','duration':5,'location':'ordinary cafe or apartment','camera':'handheld selfie, chest-up','action':'Linh places the black interview bag beside her and looks into the lens with a slightly worried smile','dialogue_vi':'Và... mình vẫn đang tìm việc. Xem bao giờ mình được nhận nhé.'}
+]
