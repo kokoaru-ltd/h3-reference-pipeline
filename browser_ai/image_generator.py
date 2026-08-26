@@ -8,7 +8,7 @@ def save_gateway_image(response: dict, out: str | Path, exclude=()) -> Path:
     items=response.get('data') or [{}]
     excluded={hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in exclude if Path(p).exists()}
     chosen=None
-    for item in reversed(items):
+    for item in items:
         if item.get('b64_json'):
             raw=base64.b64decode(item['b64_json'])
             if hashlib.sha256(raw).hexdigest() not in excluded:

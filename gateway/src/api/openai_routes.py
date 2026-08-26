@@ -505,6 +505,10 @@ async def create_image(
         # Build image data objects
         image_data_list: list[ImageData] = []
         for img_info in result.images:
+            # Uploaded references are echoed in the DOM as image results by
+            # some ChatGPT UI builds. Never return those as generations.
+            if (img_info.alt or '').startswith('catgpt_ref_'):
+                continue
             revised_prompt = img_info.prompt_title or img_info.alt or request.prompt
 
             if request.response_format == "b64_json":
