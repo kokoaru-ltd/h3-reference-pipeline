@@ -56,6 +56,9 @@ services:
       - API_HOST=0.0.0.0
       - API_PORT=8000
       - API_TOKEN=dummy123
+      # The browser remains available through noVNC; do not block API startup
+      # waiting for stdin because detached Docker has no interactive terminal.
+      - AUTO_LOGIN_PROMPT=false
 
       # VNC Authentication
       - VNC_PASSWORD=catgpt

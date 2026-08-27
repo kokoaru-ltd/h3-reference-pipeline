@@ -70,7 +70,8 @@ RUN mkdir -p /app/browser_data /app/logs /app/downloads/images
 # ── Supervisor & entrypoint ─────────────────────────────────────
 COPY docker/supervisord.conf /etc/supervisor/conf.d/catgpt.conf
 COPY docker/entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+# Normalize shell line endings for Windows checkouts before execution.
+RUN sed -i 's/\r$//' /entrypoint.sh && chmod +x /entrypoint.sh
 
 # ── Environment ─────────────────────────────────────────────────
 # Virtual display
@@ -97,4 +98,6 @@ EXPOSE 8000 6080
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
     CMD curl -f http://localhost:8000/v1/models || exit 1
 
-ENTRYPOINT ["/entrypoint.sh"]
+# Invoke bash explicitly so Windows checkouts with CRLF line endings do not
+# fail with `/entrypoint.sh: no such file or directory`.
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]

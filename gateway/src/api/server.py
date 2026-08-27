@@ -12,6 +12,7 @@ Usage:
 from __future__ import annotations
 
 import asyncio
+import os
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
@@ -67,13 +68,15 @@ async def lifespan(app: FastAPI):
 
     await asyncio.sleep(3)
 
-    if not await _browser.is_logged_in():
+    if not await _browser.is_logged_in() and os.getenv('AUTO_LOGIN_PROMPT', 'true').lower() == 'true':
         log.info("Not logged in — starting auto-login flow...")
         logged_in = await ensure_logged_in(_browser)
         if not logged_in:
             log.error("Login failed after auto-login attempt")
             raise RuntimeError("Could not log in to ChatGPT")
 
+    if not await _browser.is_logged_in():
+        log.warning('Login state is not verified; API will start and requests may require a logged-in browser session')
     _client = ChatGPTClient(page)
     set_client(_client, _browser)
     set_openai_client(_client)
